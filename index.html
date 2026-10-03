@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StarrVis — Interactive 3D Web Character</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main id="app">
+    <div class="brand">
+      <div class="eyebrow">STARRTREE • WEB CHARACTER PROTOTYPE</div>
+      <h1>StarrVis</h1>
+      <p>Move your pointer. Drag to orbit. Click StarrVis or use the controls.</p>
+    </div>
+    <div class="controls" aria-label="StarrVis animation controls">
+      <button data-mode="idle" class="active">Idle</button>
+      <button data-mode="wave">Wave</button>
+      <button data-mode="bounce">Bounce</button>
+      <button data-mode="spin">Spin</button>
+      <button id="export">Export GLB</button>
+    </div>
+    <div id="viewport" aria-label="Interactive 3D StarrVis"></div>
+    <div class="hint">✨ click StarrVis</div>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
